@@ -56,5 +56,5 @@ $ docker-compose up -d
 ```
 
 ## How to get client id and client secret and setup nanogp2?
-Please check for that the <b>[Documentation of nanogp2][(https://github.com/nanostudio-org/nanogp2/blob/master/README.md)
+Please check for that the <b>[Documentation of nanogp2](https://github.com/nanostudio-org/nanogp2/blob/master/README.md)</b>
 
