@@ -3,7 +3,7 @@ FROM php:7.3.5-apache
 RUN a2enmod headers
 RUN a2enmod expires
 
-COPY nanogp2/dist/* /var/www/html/
+ADD nanogp2/dist /var/www/html/
 COPY config.php /var/www/html/admin/config.php
 RUN chown -R www-data: /var/www/html
 
