@@ -1,4 +1,4 @@
-FROM php:7.3.5-apache
+FROM php:5.6-apache
   
 RUN a2enmod headers
 RUN a2enmod expires
