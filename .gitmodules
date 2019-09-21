@@ -1,0 +1,3 @@
+[submodule "nanogp2"]
+	path = nanogp2
+	url = https://github.com/nanostudio-org/nanogp2

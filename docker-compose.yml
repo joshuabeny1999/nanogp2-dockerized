@@ -1,0 +1,20 @@
+version: '3'
+services:
+    nanogp2:
+        image: joshuabeny/nanogp2
+        container_name: nanogp2
+        restart: always
+        volumes:
+            - nanogp2_user_data:/var/www/html/admin/users
+        expose:
+            - 80
+        environment:
+           NANOGP2_MAX_ACCOUNTS: 1
+           # Client ID and client secret can be obtained from the Google API Console.
+           NANOGP2_CLIENT_ID: "your_client_id"
+           NANOGP2_CLIENT_SECRET: "your_client_secret"
+           #  ALBUMS_FILTER is used to filter albums out. Albums with a title containing one of the string will not be displayed.
+           NANOGP2_ALBUMS_FILTER: "sauvergarde, backup, ignore-nanogp2"
+
+volumes:
+    nanogp2_user_data:
