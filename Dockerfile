@@ -5,6 +5,7 @@ RUN a2enmod expires
 
 COPY nanogp2/dist/* /var/www/html/
 COPY config.php /var/www/html/admin/config.php
+RUN chown -R www-data: /var/www/html
 
 ENV NANOGP2_MAX_ACCOUNTS=1
 ENV NANOGP2_CLIENT_ID="your_client_id"
